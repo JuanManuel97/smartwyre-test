@@ -10,7 +10,7 @@ public class RebateService : IRebateService
         var rebateDataStore = new RebateDataStore();
         var productDataStore = new ProductDataStore();
 
-        Rebate rebate = rebateDataStore.GetRebate(request.RebateIdentifier);
+        Rebate rebate = rebateDataStore.GetRebate(request.RebateIdentifier, request.IncentiveType);
         Product product = productDataStore.GetProduct(request.ProductIdentifier);
 
         var result = new CalculateRebateResult();

@@ -7,4 +7,6 @@ public class CalculateRebateRequest
     public string ProductIdentifier { get; set; }
 
     public decimal Volume { get; set; }
+
+    public int IncentiveType { get; set; }
 }
